@@ -11,7 +11,7 @@ const Card = (props) => {
     <div className='flex-column flex-jc bg-white mrgn-10 pad-10 border-radius-10' style={{ width: '300px', height: '280px' }}>
       <div className='flex-row flex-ac no-shadow'>
         <div className='pad-10 no-shadow'><Avatar size={64} icon='user'
-         src="https://i.ibb.co/7GpXQWx/ben10.png" alt="ben10">
+         src="https://i.ibb.co/hVjYnj1/ben10.png" alt="ben10">
          </Avatar></div>
         <div className='pad-10 font-md no-shadow'>
           <span className='font-bold no-shadow'>{props.title}</span><br/>
