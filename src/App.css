@@ -10,6 +10,14 @@
   padding-left: 80px !important;
 }
 
+.plr-md {
+  padding-left: 5vw !important;
+  padding-right: 5vw !important;
+}
+
+.pl-md {
+  padding-left: 5vw !important;
+}
 .h-100 {
   min-height: 100vh !important;
 }
@@ -177,6 +185,10 @@
 
 .mrgn-10 {
   margin: 10px !important;
+}
+
+.mrgn-15 {
+  margin: 15px !important;
 }
 
 .mrgn-20 {

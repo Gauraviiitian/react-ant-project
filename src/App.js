@@ -8,10 +8,9 @@ const { Header, Content, Footer, Sider } = Layout;
 
 const Card = (props) => {
   return (
-    <div className='flex-column flex-jc bg-white mrgn-10 pad-10 border-radius-10' style={{ width: '300px', height: '280px' }}>
+    <div className='flex-column flex-jc bg-white border-radius-10 mrgn-15' style={{ width: '320px', height: '300px' }}>
       <div className='flex-row flex-ac no-shadow'>
-        <div className='pad-10 no-shadow'><Avatar size={64} icon='user'
-         src="https://i.ibb.co/hVjYnj1/ben10.png" alt="ben10">
+        <div className='pad-10 no-shadow'><Avatar size={64} icon='user' src="https://i.ibb.co/hVjYnj1/ben10.png" alt="ben10">
          </Avatar></div>
         <div className='pad-10 font-md no-shadow'>
           <span className='font-bold no-shadow'>{props.title}</span><br/>
@@ -47,7 +46,7 @@ class App extends Component {
         
         {/* Sider here */}
         <Sider className='bg-white h-100 pt-100 border-right' width={70}>
-          <Menu defaultSelectedKeys={['1']} mode="inline">
+          <Menu defaultSelectedKeys={['1']}>
             <Menu.Item className='bg-white' key="1">
               <Icon type="appstore" style={{color: '#3EBCB3', fontSize: '25px'}}/>
             </Menu.Item>
@@ -62,7 +61,7 @@ class App extends Component {
 
         {/* Header here */}
         <Layout className='bg-default'>
-          <Header className='bg-white border-bottom pl-80'>
+          <Header className='bg-white border-bottom pl-md'>
           <div className='flex flex-row'>
             <div><a href='http://www.whitepanda.in/'><img src={require('./logo.png')} height='25' width='125'/></a></div>
             <div className='flex flex-row flex-ac flex-jfe width-100'>
@@ -75,7 +74,7 @@ class App extends Component {
           </Header>
 
           <Content className='bg-default'>
-            <div className='pl-80 flex flex-column flex-jse' style={{height: '400px', width: '85vw'}}>
+            <div className='flex flex-column flex-jse plr-md' style={{height: '350px', width: '90vw'}}>
               <div><span style={{fontSize: '40px', color: '#1D2330'}}>Content Store</span></div>
               <div className='bg-light pad-20'>
                 <div style={{maxWidth: '54vw'}}>
@@ -88,8 +87,9 @@ class App extends Component {
                 </div>
               </div>
             </div>
-            <div className='flex-row flex-wrap hover pl-80' style={{width: '85vw'}}>
-              {Object.keys(costs).map((object, i) => <Card title={titles[i]} cost={costs[i]} details={details[1]} key={i}/>)}
+            <div className='flex-row flex-wrap hover plr-md' style={{width: '90vw', alignItems: 'center'}}>
+              {Object.keys(costs).map((object, i) => 
+                <Card title={titles[i]} cost={costs[i]} details={details[1]} key={i}/>)}
             </div>
           </Content>
 
